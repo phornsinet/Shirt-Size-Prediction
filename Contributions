@@ -1,0 +1,6 @@
+-Collected and prepared data for training a machine learning model
+-Created a dataset of 1,000 rows using height and weight to predict T-shirt size
+-Built a machine learning model to predict T-shirt size
+-Analyzed the accuracy of the model and improved it
+-Helped online shops reduce size mismatch using prediction
+-Made a useful tool that gives T-shirt size based on height and weight
