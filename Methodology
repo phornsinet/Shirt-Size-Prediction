@@ -1,0 +1,17 @@
+1.Data Collection
+-Used a dataset with height, weight, and T-shirt sizes (S, L, XL).
+2.Data Cleaning & Preprocessing
+-Removed duplicates and outliers.
+-Scaled height & weight for better model performance.
+3.Exploratory Analysis (EDA)
+-Checked size distribution (S, L, XL).
+-Plotted height vs. weight to see patterns.
+4.Model Training
+-Tested Random Forest, SVM, and Logistic Regression.
+-Split data into 80% training, 20% testing.
+5.Model Evaluation
+-Compared accuracy, precision, recall.
+-Selected the best-performing model.
+6.Deployment
+-Saved the model for future predictions.
+-Created a script to predict sizes for new height & weight inputs.
