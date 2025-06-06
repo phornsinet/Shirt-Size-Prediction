@@ -1,0 +1,21 @@
+The Random Forest Classifier was selected as the best model for this project due to these key factors:
+
+1. Handles Non-Linear Relationships
+-Size prediction depends on complex interactions between height/weight (not a straight-line pattern).
+-Random Forest captures these non-linear trends better than linear models (e.g., Logistic Regression).
+
+2. Robust to Outliers & Noisy Data
+-Human body measurements can have natural variability (e.g., tall but lightweight individuals).
+-Random Forest’s ensemble approach (multiple decision trees) reduces overfitting to odd data points.
+
+3. Feature Importance Insights
+-The model revealed height matters 1.3× more than weight for size prediction (critical for business decisions).
+-Unlike "black box" models (e.g., Neural Networks), this transparency helps improve the dataset.
+
+4. Works Well with Small-to-Medium Datasets
+-With ~1,000 samples, deep learning would be overkill.
+-Random Forest delivers high accuracy (~95.5%) without needing massive data.
+
+5. Low Maintenance & Scalable
+-Once trained, it makes fast predictions (critical for e-commerce real-time recommendations).
+-Easy to update by adding new data without full retraining.
