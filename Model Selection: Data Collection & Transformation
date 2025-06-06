@@ -27,7 +27,7 @@
  +Random Forest: Slightly slower predictions
  +SVM: Sensitive to outliers
  +Logistic Reg.: Limited to linear boundaries
--Chosen Model: Random Forest (Highest accuracy: 92%).
+-Chosen Model: Random Forest (Highest accuracy: 95.5%).
 
 5. Key Insights
 -Height was 1.3× more important than weight in predictions (feature importance).
