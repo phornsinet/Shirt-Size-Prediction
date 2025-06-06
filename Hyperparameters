@@ -1,0 +1,22 @@
+Hyperparameters Used
+
+1.Random Forest
+-n_estimators: Number of decision trees used. Example: 100
+-max_depth: Maximum depth each tree can grow to. Example: None or 10
+-min_samples_split: Minimum number of samples required to split a node. Example: 2
+-random_state: Makes the result repeatable. Example: 42
+-Tuning n_estimators and max_depth can increase model accuracy and reduce overfitting.
+
+2.Support Vector Machine (SVM)
+-C: Controls the trade-off between margin size and classification errors. Example: 1.0
+-kernel: Defines the method used to transform data. Example: 'rbf', 'linear'
+-gamma: Determines how far the influence of a single point reaches. Example: 'scale' or 0.01
+-Adjusting C and gamma helps find the right balance between flexibility and accuracy.
+
+3.Logistic Regression
+-C: Controls regularization strength (smaller = more regularization). Example: 1.0
+-penalty: Type of regularization used to avoid overfitting. Example: 'l2'
+-solver: Algorithm used to find the best weights. Example: 'lbfgs' or 'liblinear'
+-A smaller C keeps the model simpler, which helps prevent overfitting.
+
+
