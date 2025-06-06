@@ -1,0 +1,38 @@
+1. Data Collection
+-Source: 1,000+ records of:
+ +Height (cm)
+ +Weight (kg)
+ +T-Shirt Size (S/L/XL)
+-Format: Structured CSV data.
+
+2. Data Transformation
+-Cleaning:
+ +Removed duplicates.
+ +Filtered outliers (e.g., height < 150cm or > 200cm).
+-Feature Engineering:
+ +Added BMI (Body Mass Index) as a derived feature.
+ +Categorized weights into light/medium/heavy bins.
+
+3. Preprocessing
+-Scaling: Applied StandardScaler (Z-score normalization) to height/weight.
+-Encoding: Converted size labels (S/L/XL) to numerical values (0/1/2).
+-Train-Test Split: 80% training, 20% testing (stratified by size).
+
+4. Model Selection
+-Algorithm Pros
+ +Random Forest:Handles non-linear patterns
+ +SVM: Works well with small datasets
+ +Logistic Reg.: Fast & interpretable
+-Algorithm Cons
+ +Random Forest: Slightly slower predictions
+ +SVM: Sensitive to outliers
+ +Logistic Reg.: Limited to linear boundaries
+-Chosen Model: Random Forest (Highest accuracy: 92%).
+
+5. Key Insights
+-Height was 1.3× more important than weight in predictions (feature importance).
+-Most misclassifications occurred between L and XL sizes.
+
+6. Output
+-Final Features: Scaled height, weight, BMI, weight category.
+-Saved Model: t_shirt_model.pkl (Includes scaler for new data).
