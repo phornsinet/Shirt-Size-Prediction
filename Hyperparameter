@@ -1,0 +1,28 @@
+Hyperparameters Used
+
+1.Random Forest
+| Hyperparameter | Meaning | Example Value |
+|----------------|---------|---------------|
+| `n_estimators` | Number of trees in the forest | `100` |
+| `max_depth`    | Max depth of each tree        | `None` (or `10`) |
+| `min_samples_split` | Minimum samples to split a node | `2` |
+| `random_state` | Makes results reproducible | `42` |
+*Tuning `n_estimators` and `max_depth` can improve accuracy and prevent overfitting.*
+
+2.SVM (Support Vector Machine)
+| Hyperparameter | Meaning | Example Value |
+|----------------|---------|---------------|
+| `C`            | Controls margin width vs errors | `1.0` |
+| `kernel`       | Type of transformation (e.g. linear, RBF) | `'rbf'` |
+| `gamma`        | Controls influence of individual points | `'scale'` or `0.01` |
+*Tuning `C` and `gamma` helps balance model flexibility and accuracy.*
+
+3.Logistic Regression
+| Hyperparameter | Meaning | Example Value |
+|----------------|---------|---------------|
+| `C`            | Inverse of regularization strength | `1.0` |
+| `penalty`      | Type of regularization (`l2`, `l1`) | `'l2'` |
+| `solver`       | Algorithm used to optimize         | `'lbfgs'` or `'liblinear'` |
+*Smaller `C` values make the model simpler (helps avoid overfitting).*
+
+
