@@ -1,0 +1,38 @@
+Model Comparison Results
+We trained and tested three machine learning models to predict T-shirt sizes (L, S, XL) based on height and weight:
+| Model                  | Accuracy | Notes |
+|------------------------|----------|-------|
+| **Random Forest**      | **100%** | Perfect performance. No mistakes. |
+| **Support Vector Machine (SVM)** | 98.5% | Only 3 predictions were wrong. Very good overall. |
+| **Logistic Regression**| 95.5% | Some difficulty predicting rare sizes like "L". |
+
+Performance Interpretation 
+- Random Forest is the best model. It predicted all T-shirt sizes correctly. No errors.
+- SVM did great too but made 3 small mistakes. Most errors were with size "L", which has fewer examples.
+- Logistic Regression had more trouble, especially with size "L". Even though it worked well for the common size "XL", it made more errors for smaller classes.
+ Note: The dataset has more XL sizes than L or S, so some models may favor predicting XL more often.
+
+Evaluation Methodology
+Here’s how we tested and compared the models:
+1. Data Split
+   - Total dataset: 1000 rows
+   - Training set: 800 samples (80%)
+   - Test set: 200 samples (20%)
+2. Feature Scaling:
+   - Height and weight were standardized (converted to a common scale).
+3. Models Trained:
+   - Random Forest
+   - SVM (Support Vector Machine)
+   - Logistic Regression
+4. Evaluation Metrics Used:
+   - Accuracy: How many predictions were correct.
+   - Precision: How accurate the model is when it predicts a specific size.
+   - Recall: How many actual sizes the model correctly found.
+   - F1 Score: A balanced measure of precision and recall.
+   - Confusion Matrix: A table showing what the model got right or wrong for each size.
+
+Final Conclusion
+- Use Random Forest — it’s the most accurate and reliable model in this project.
+- It handles class imbalance well and gives perfect predictions on unseen data.
+- Great for real-world use like recommending T-shirt sizes in online stores.
+
